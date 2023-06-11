@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture} from '@react-three/drei';
 import CanvasLoader from '../Loader';
-import { IcosahedronGeometry } from "three";
 
 
 const Ball = (props) => {
@@ -12,7 +11,7 @@ const Ball = (props) => {
       <ambientLight intensity={0.25}/>
       <directionalLight position={[0,0,0.05]}/>
       <mesh castShadow receiveShadow scale={2.75}>
-          <icosahedronGeometry args={[1,1]}/>
+          <icosahedronGeometry args={[1, 1]}/>
           <meshStandardMaterial
             color='#fff8eb'
             polygonOffset
